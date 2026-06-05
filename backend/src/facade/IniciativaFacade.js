@@ -31,6 +31,20 @@ class IniciativaFacade {
         );
     }
 
+    consultarEstado(codigo) {
+
+        return {
+            codigo: codigo,
+            titulo: "Ley de Seguridad Ciudadana",
+            descripcion: "Incrementar cámaras de vigilancia",
+            estado: "Activa",
+            totalFirmas: 120,
+            comentarios: [
+                "La propuesta ayudará a reducir la delincuencia.",
+                "Debería implementarse en todo el país."
+            ]
+        };
+    }
 }
 
 module.exports =
